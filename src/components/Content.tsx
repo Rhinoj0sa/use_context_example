@@ -1,3 +1,3 @@
-const getCopy = (userType: string):string => `Hello ${userType}`;
+const getCopy = (userType: string):string => `Hello from getCopy ${userType}`;
 
 export default getCopy
