@@ -1,13 +1,16 @@
 import { useGlobalContext } from "./MyGlobalContext";
 import MyProfile from "./MyProfile";
+import { ColoredLine } from "./ColoredLine";
 const About = () => {
   const { copy, setCopy, risk, setRisk } = useGlobalContext();
   return (
     <>
       <hr />
+      <ColoredLine/>
       <h2>About component</h2>
       <h3>
-        Context: copy: {copy} risk: {risk}{" "}
+        Context: copy: {copy} 
+        risk: {risk}{" "}
       </h3>
       <h3>Context: risk: {risk} </h3>
       <button
